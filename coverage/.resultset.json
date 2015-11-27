@@ -72,6 +72,18 @@
         0,
         null,
         null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
         null
       ],
       "/home/ubuntu/workspace/HW4/app/controllers/application_controller.rb": [
@@ -92,6 +104,6 @@
         null
       ]
     },
-    "timestamp": 1448365989
+    "timestamp": 1448370786
   }
 }
