@@ -3320,3 +3320,102 @@ Started GET "/assets/jquery_ujs.self.js?body=1" for 179.35.236.75 at 2015-11-24 
 
 
 Started GET "/assets/application.self.js?body=1" for 179.35.236.75 at 2015-11-24 12:55:30 +0000
+
+
+Started GET "/assets/rails.png" for 179.35.236.75 at 2015-11-27 12:10:19 +0000
+
+
+Started GET "/assets/rails.png" for 179.35.236.75 at 2015-11-27 12:10:26 +0000
+
+
+Started GET "/movies" for 179.35.236.75 at 2015-11-27 12:10:29 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://olivia-001-mpkhoury.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title
+Completed 302 Found in 56ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 179.35.236.75 at 2015-11-27 12:10:30 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (43.5ms)
+Completed 200 OK in 124ms (Views: 104.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 179.35.236.75 at 2015-11-27 12:10:30 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:30 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:30 +0000
+
+
+Started GET "/movies/7" for 179.35.236.75 at 2015-11-27 12:10:35 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered movies/show.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 22.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 179.35.236.75 at 2015-11-27 12:10:35 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:35 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:35 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:35 +0000
+
+
+Started GET "/movies/7/similar" for 179.35.236.75 at 2015-11-27 12:10:38 +0000
+Processing by MoviesController#similar as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = ?  [["director", "Mr Johnnes"]]
+  Rendered movies/similar.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 179.35.236.75 at 2015-11-27 12:10:38 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:38 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:38 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:39 +0000
+
+
+Started GET "/movies" for 179.35.236.75 at 2015-11-27 12:10:40 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://olivia-001-mpkhoury.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 179.35.236.75 at 2015-11-27 12:10:41 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 179.35.236.75 at 2015-11-27 12:10:41 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:41 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 179.35.236.75 at 2015-11-27 12:10:41 +0000
